@@ -6,6 +6,7 @@ describe('test for header links', () => {
         cy.viewport(1440, 900)
         cy.contains('OK, Got it').click()
     }
+
     )
     //"Google" logo, "Next Billion Users"
     it('should redirect to GNBU website when click Google logo or "NBU" logo', () => {
@@ -49,6 +50,8 @@ describe('test for header links', () => {
         cy.get('.glue-header__list > :nth-child(7) a[href="https://www.blog.google/technology/next-billion-users/"]').should('have.attr', 'target', '_blank') 
         //test the thing triggering the browser to perform this behavior - as opposed to testing the behavior itself. No multi-tabs support.
     })
+
+
 
     // it('hero title should be "Building for everyone, everywhere." ', () => {
     //     cy.get('.hero-home__title-container h1').wait(2000).should('contain', 'Building for everyone, everywhere.')

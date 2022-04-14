@@ -14,26 +14,6 @@ describe('test for carousel function', () => {
         cy.get('.hero-home').find('.hero-home__slide').should('have.length', 5)
     })
 
-
-
-    
-    // it.only('each slide should load content', () =>{
-    //     for (let i = 0; i < 5; i++) {
-    //         cy.get('.hero-home__slide').eq(i).;
-    //     }
-    // })              
-
-
-
-    //________________________COME BACK TO THIS_____________________________
-    //check when click menu bar, responding slide appears
-    // it.only('check for when click menu bar 1, slide 1 shows', () => {
-    //     cy.get('.hero-home__bars button').eq(0).should('have.css', 'cursor', 'pointer')
-    // })
-
-
-
-
     //check for slide 1 poster (API)
     it('check poster image API', () => {
         cy.request({
